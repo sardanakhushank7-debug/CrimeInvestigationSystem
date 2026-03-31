@@ -25,10 +25,9 @@
 <ul>
 <li><a href="dashboard.html">Dashboard</a></li>
 <li><a href="cases.html">Cases</a></li>
-<li><a href="suspects.html">Suspects</a></li>
-<li><a href="evidence.html">Evidence</a></li>
+<li><a href="add-suspect.html">Suspects</a></li>
+<li><a href="add-evidence.html">Evidence</a></li>
 <li><a href="officers.html">Officers</a></li>
-<li><a href="reports.html">Reports</a></li>
 <li><a href="settings.html">Settings</a></li>
 </ul>
 </nav>
@@ -78,6 +77,11 @@
 </div>
  
         <div class="input-group">
+<label for="caseIdSuspect">Case ID (Optional)</label>
+<input type="text" id="caseIdSuspect" name="caseIdSuspect" placeholder="Enter related case ID">
+</div>
+
+        <div class="input-group">
 <label for="lastKnownLocation">Last Known Location</label>
 <input type="text" id="lastKnownLocation" name="lastKnownLocation" placeholder="Enter last known location">
 </div>
@@ -119,6 +123,19 @@
 </div>
  
       </form>
+</section>
+
+<section class="form-box">
+  <header class="form-header">
+    <h2>All Suspects</h2>
+    <p>View all suspects in the system.</p>
+  </header>
+  <table id="allSuspectsTable" class="data-table">
+    <thead>
+      <tr><th>Suspect ID</th><th>Name</th><th>Alias</th><th>Crime Type</th><th>Status</th><th>Risk</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 </section>
 </main>
  
