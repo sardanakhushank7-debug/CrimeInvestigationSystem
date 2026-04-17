@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const path = require('path');
 
-const User = require('./models/User');
+const User = require('./models/user');
 const Case = require('./models/Case');
 const Suspect = require('./models/Suspect');
 const Evidence = require('./models/Evidence');
